@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Serviços - Assistência Técnica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cadastro de Serviços</h1>
+
+        <form id="serviceForm">
+            
+            <label>Nome do Cliente</label>
+            <input type="text" id="cliente" required>
+
+            <label>Contato</label>
+            <input type="text" id="contato" required>
+
+            <label>Tipo de Serviço</label>
+            <input type="text" id="servico" required>
+
+            <label>Descrição</label>
+            <textarea id="descricao" required></textarea>
+
+            <label>Status</label>
+            <select id="status">
+                <option value="Pendente">Pendente</option>
+                <option value="Em andamento">Em andamento</option>
+                <option value="Concluído">Concluído</option>
+            </select>
+
+            <button type="submit" id="btnSalvar">Cadastrar</button>
+        </form>
+
+        <h2>Serviços Cadastrados</h2>
+
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Cliente</th>
+                    <th>Contato</th>
+                    <th>Serviço</th>
+                    <th>Status</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody id="listaServicos"></tbody>
+        </table>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
